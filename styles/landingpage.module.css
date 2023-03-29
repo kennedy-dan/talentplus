@@ -1,0 +1,26 @@
+.cards_slider_wrapper {
+  display: flex;
+  position: absolute;
+  transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  top:-30%;
+  /* bottom: 10%; */
+}
+
+
+
+
+.cards_slider {
+  position: relative;
+  max-width: 516px;
+  margin: 0 auto;
+}
+.cards_slider:after {
+  content: "";
+  display: block;
+  height: 264px;
+
+}
+
+
+
+
