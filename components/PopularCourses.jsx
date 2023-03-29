@@ -118,9 +118,9 @@ const PopularCourses = () => {
         </div>
       </div>
       <div className="grid gap-1 md:gap-5 grid-cols-2 md:grid-cols-3 mt-10">
-        {data.map((items) => (
-          <div className="bg-white md:py-4 md:px-3 px-1 py-1 rounded-xl">
-            <Image src={items.img} />
+        {data.map((items, key) => (
+          <div key={key} className="bg-white md:py-4 md:px-3 px-1 py-1 rounded-xl">
+            <Image src={items.img} alt='Popular' />
             <div className="flex justify-between pt-4">
               <div
                 style={{ background: "rgba(30, 93, 206, 0.2)" }}
@@ -134,7 +134,7 @@ const PopularCourses = () => {
                 <div className="flex items-center">
                   <p>{items.favs} </p>
                   <div className="pl-[1px]">
-                    <Image src={star} />
+                    <Image src={star} alt='star' />
                   </div>
                   <p className="ml-2">({items.views})</p>
                 </div>
@@ -146,7 +146,7 @@ const PopularCourses = () => {
             <div className="flex md:mt-4 mt-2 items-center justify-between text-[8px] md:text-[12px] text-[#A1A1A1] ">
               <div className="flex items-center">
                 <div>
-                  <Image src={time} />
+                  <Image src={time} alt='time' />
                 </div>
                 <div className="ml-2">
                   <p>{items.time}</p>
@@ -154,7 +154,7 @@ const PopularCourses = () => {
               </div>
               <div className="flex items-center ">
                 <div className="">
-                  <Image src={book} />
+                  <Image src={book} alt='book' />
                 </div>
                 <p className="ml-3">{items.lessons}</p>
               </div>
@@ -162,7 +162,7 @@ const PopularCourses = () => {
             <div className="flex pb-2 justify-between items-center mt-2 md:mt-4">
               <div className="flex items-center">
                 <div>
-                  <Image src={items.authorImg} className="md:w-8 md:h-8 w-4 h-4" />
+                  <Image src={items.authorImg} alt='author' className="md:w-8 md:h-8 w-4 h-4" />
                 </div>
                 <p className="font-bold md:text-[12px] text-[10px] ml-1 md-ml-3">{items.authorname}</p>
               </div>

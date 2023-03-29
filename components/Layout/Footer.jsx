@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <div className="bg-[#000F24] px-10 md:px-20 py-20 md:flex justify-between">
       <div>
-        <Image src={logo} className="md:pb-12 pb-3" />
+        <Image src={logo} alt='logo' className="md:pb-12 pb-3" />
         <p className="text-white ">
           Reach out to us on any of our social <br /> media networks
         </p>

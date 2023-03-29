@@ -34,37 +34,26 @@ const Header = () => {
         <div className="ml-5">
           <Link
             href="/"
-            className={({ isActive }) =>
-              isActive ? "border-b-2  border-black  ml-5 h-10" : "ml-5 link "
-            }
+      
           >
             <p className="text-black text-lg font-semibold">Home</p>
           </Link>
           <Link
-            href="/shop"
-            className={({ isActive }) =>
-              isActive
-                ? "border-b-2 bg-red-700 border-black w-fit ml-5 h-10"
-                : " ml-5 link"
-            }
+            href='/'
           >
             {" "}
             <p className="text-black text-lg font-semibold">Shop</p>
           </Link>
           <Link
             href="/blog"
-            className={({ isActive }) =>
-              isActive ? "border-b-2 border-black w-fit ml-5 h-10" : "ml-5 link"
-            }
+     
           >
             {" "}
             <p className="text-black text-lg font-semibold">Blog</p>
           </Link>
           <Link
             href="/portfolio"
-            className={({ isActive }) =>
-              isActive ? "border-b-2 border-black w-fit ml-5 h-10" : "ml-5 link"
-            }
+      
           >
             {" "}
             <p className="text-black text-lg font-semibold">Portfolio</p>

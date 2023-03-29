@@ -40,7 +40,7 @@ export default function FAQ() {
       <div className="flex items-center w-full ">
         <div className=" mt-10 w-full md:px-20 px-10">
           {data.map((item, index) => (
-            <Accordion item={item} index={index} />
+            <Accordion item={item} index={index} key={index} />
           ))}
         </div>
       </div>

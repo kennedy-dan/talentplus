@@ -125,8 +125,8 @@ const Comments = () => {
               }%)`,
             }}
           >
-            {properties.map((props) => (
-              <div className="md:m-8 m-6 rounded-2xl bg-white px-8 py-5">
+            {properties.map((props,key) => (
+              <div className="md:m-8 m-6 rounded-2xl bg-white px-8 py-5" key={key}>
                 <Card key={props._id} property={props} />
               </div>
             ))}

@@ -47,8 +47,8 @@ const TheBest = () => {
       </div>
       <div className="flex items-center md:mt-0 mt-10">
         <div className="grid grid-cols-2 h-fit md:gap-4 gap-1 ">
-          {data.map((items) => (
-            <div className="bg-white px-4 py-6 rounded">
+          {data.map((items, key) => (
+            <div key={key} className="bg-white px-4 py-6 rounded">
               <Image src={items.icon} alt='icon' className="h-8 w-8" />
 
               <p className="font-bold text-sm md:text-base py-4">{items.name}</p>
