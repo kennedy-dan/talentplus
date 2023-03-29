@@ -1,5 +1,5 @@
 import React from "react";
-import vector from "@/public/assets/vector.png";
+import vector from "@/public/assets/Vector.png";
 import Image from "next/image";
 import img from "@/public/assets/highquality.png";
 import sub from "@/public/assets/subscribers.png";

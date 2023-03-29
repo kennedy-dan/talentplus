@@ -21,7 +21,7 @@ const Footer = () => {
           <Image src={twitter} alt='twitter' />
           <Image src={youtube} alt='youtube' />
           <Image src={insta} alt='insta' />
-          <Image src={discord} allt='discord' />
+          <Image src={discord} alt='discord' />
         </div>
       </div>
       <div className="text-white text-[12px] text-base mt-4 md:mt-0">
