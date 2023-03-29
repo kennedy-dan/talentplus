@@ -13,7 +13,7 @@ const Card = ({ property }) => {
       <div className="details ">
         <p className="text-sm py-3 leading-[26px]  text-gray-500">{comment}</p>
         <div className="flex mt-6">
-          <Image src={image} />
+          <Image src={image} alt='profile' />
           <div className="ml-5">
             <p className="font-semibold">{name}</p>
             <p className="text-gray-500 text-sm">{job}</p>

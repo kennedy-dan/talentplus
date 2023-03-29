@@ -11,7 +11,7 @@ const Community = () => {
       </p>
         <p className="text-white text-sm md:text-base text-center pt-6 md:pt-10">Meet up with other techstars and grow together</p>
       <div className="flex justify-center">
-        <Image src={map} />
+        <Image src={map} alt='Community' />
       </div>
       <div className="flex justify-center mt-2">
       <Button text='Join Our Community' style='text-[#004DB3] text-sm bg-white md:px-8 md:py-3 px-4 py-2 rounded-lg' />

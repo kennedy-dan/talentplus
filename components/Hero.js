@@ -28,15 +28,15 @@ const Hero = () => {
             />
           </div>
           <div className="absolute md:block hidden left-[46%]  mt-20">
-            <Image src={vector} className='' />
+            <Image src={vector} alt='vector' className='' />
           </div>
           <div className="absolute md:hidden  left-[70%] mt-60 ">
-            <Image src={vectorResponsive} className='' />
+            <Image src={vectorResponsive} alt='vectorResponsive' className='' />
           </div>
         </div>
 
         <div className="mt-4 flex md:justify-start justify-center items-center">
-          <Image src={review} />
+          <Image src={review} alt='review' />
           <div className="text-center ml-3">
             <p className="font-bold text-white text-xl">255k+</p>
             <p className="text-white text-center">Previews</p>
@@ -44,7 +44,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="md:ml-9 md:mt-0 mt-20">
-        <Image src={heroImg} />
+        <Image src={heroImg} alt='hero' />
       </div>
     </div>
   );

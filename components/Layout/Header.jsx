@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <div className="flex justify-between bg-[#004DB3] py-8 px-10 md:px-10 lg:px-20 items-center">
-      <Image src={logo} />
+      <Image src={logo} alt='logo' />
       <div className="w-8">
         <AiOutlineMenu
           onClick={() => setIsOpen(true)}

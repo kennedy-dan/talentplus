@@ -42,14 +42,14 @@ const TheBest = () => {
             high definition, generally any
             <br /> standard video image
           </p>
-          <Image src={boy} className="rounded w-[500px]  object-contain" />
+          <Image src={boy} alt='boy' className="rounded w-[500px]  object-contain" />
         </div>
       </div>
       <div className="flex items-center md:mt-0 mt-10">
         <div className="grid grid-cols-2 h-fit md:gap-4 gap-1 ">
           {data.map((items) => (
             <div className="bg-white px-4 py-6 rounded">
-              <Image src={items.icon} className="h-8 w-8" />
+              <Image src={items.icon} alt='icon' className="h-8 w-8" />
 
               <p className="font-bold text-sm md:text-base py-4">{items.name}</p>
 

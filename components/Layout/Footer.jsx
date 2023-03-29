@@ -17,11 +17,11 @@ const Footer = () => {
           Reach out to us on any of our social <br /> media networks
         </p>
         <div className="flex py-4 justify-between text-white">
-          <Image src={fb} />
-          <Image src={twitter} />
-          <Image src={youtube} />
-          <Image src={insta} />
-          <Image src={discord} />
+          <Image src={fb} alt='facebook'/>
+          <Image src={twitter} alt='twitter' />
+          <Image src={youtube} alt='youtube' />
+          <Image src={insta} alt='insta' />
+          <Image src={discord} allt='discord' />
         </div>
       </div>
       <div className="text-white text-[12px] text-base mt-4 md:mt-0">

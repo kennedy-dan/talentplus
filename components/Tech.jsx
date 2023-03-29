@@ -26,7 +26,7 @@ const Tech = () => {
   return (
     <div className="flex md:px-28 px-5 justify-between md:justify-evenly bg-[#CCDBF0]">
       {techCompanies.map(companies =>    <div>
-        <Image src={companies.name} className='object-contain w-20 h-20' />
+        <Image src={companies.name} alt='companies' className='object-contain w-20 h-20' />
       </div>)}
     </div>
   );
