@@ -48,10 +48,10 @@ const HighQuality = () => {
         />
         </div>
     
-        <div className="grid grid-cols-2 gap-6 w-11/12 px-4 md:mt-4 mt-9">
-            {items.map((item,key) => <div className="bg-white px-3 md:px-5 flex rounded py-3" key={key}>
-                <Image src={item.icons} alt='icon' />
-                <p className="pl-4 font-bold text-[10px]  md:text-base">{item.name}</p>
+        <div className="grid grid-cols-2 lg:gap-6 gap-2 w-11/12 px-4 md:mt-4 mt-9">
+            {items.map((item,key) => <div className="bg-white px-3 lg:px-5 flex rounded py-3" key={key}>
+                <Image src={item.icons} className='w-5 h-5 lg:w-fit lg:h-fit' alt='icon' />
+                <p className="pl-4 font-bold text-[10px]   lg:text-base">{item.name}</p>
             </div>)}
         </div>
       </div>

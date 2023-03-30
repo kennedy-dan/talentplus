@@ -7,7 +7,7 @@ const Card = ({ property }) => {
   const { index, name, comment, image, job } = property;
   return (
     <div
-      className=" card w-[390px]  sm:w-[650px] md:w-[500px] rounded-lg   px-3 py-2"
+      className=" card w-[390px]  sm:w-[650px] lg:w-[500px] rounded-lg   px-3 py-2"
       id={`card-${index}`}
     >
       <div className="details ">
@@ -92,14 +92,7 @@ const Comments = () => {
     }
   }, [property, count]);
 
-  // useEffect(() => {
-  //     setInterval(() => {
-  //       const newIndex = property.index - 1;
-  //       setproperty(data.properties[newIndex]);
-  //       console.log(property.index);
-  //     }, 3000);
 
-  //   });
 
   const nextProperty = () => {
     const newIndex = property.index + 1;
@@ -113,9 +106,9 @@ const Comments = () => {
 
   return (
     <>
-      <div className="mt-24">
+      <div className="mt-24 w-screen">
         <div
-          className={`${styles.cards_slider}  relativ active-slide-${property.index}`}
+          className={`${styles.cards_slider}  overflow-x-hidden  active-slide-${property.index}`}
         >
           <div
             className={`${styles.cards_slider_wrapper} bg-[#F8F9FC] flex`}
@@ -126,7 +119,7 @@ const Comments = () => {
             }}
           >
             {properties.map((props,key) => (
-              <div className="md:m-8 m-6 rounded-2xl bg-white px-8 py-5" key={key}>
+              <div className="md:m-8 m-2 rounded-2xl bg-white px-2 md:px-8 py-5" key={key}>
                 <Card key={props._id} property={props} />
               </div>
             ))}

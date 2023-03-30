@@ -36,3 +36,35 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+## Deploy on Docker
+
+Install Docker on your machine (https://docs.docker.com/desktop/install/windows-install/)
+
+Create a docker file in the root directory and add the code below:
+
+FROM node:16-alpine
+
+WORKDIR /frontend
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+EXPOSE 3000
+
+CMD npm run dev
+
+Create a docker container:
+docker build -t talent-plus:developement .
+
+Mae sure the container has been created:
+docker image ls
+
+To run the docker container: 
+docker run --publish 3000:3000 talent-plus:developement
+
+Navigate to (http://localhost:3000)

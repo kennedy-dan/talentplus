@@ -9,8 +9,8 @@ const Hero = () => {
   return (
     <div className="md:flex px:10 md:px-20 items-center bg-[#004DB3]">
       <div className="">
-        <p className="font-bold text-3xl md:text-6xl md:text-left text-center text-white">
-          Grow your skills to <br /> advance your career path{" "}
+        <p className="font-bold text-3xl md:text-3xl lg:text-6xl md:text-left text-center text-white">
+          Grow your skills to <br className="lg:block hidden" /> advance your career path{" "}
         </p>
         <p className="text-white my-4 md:text-left md-text-base text-[12px] px-3 md:px-0 text-center">
           build your future with our quality education. the best and largest
@@ -20,25 +20,25 @@ const Hero = () => {
           <div className="">
             <Button
               text="Get Started Now"
-              style="border rouneded border-white text-white md:text-base text-sm md:px-9 px-3 py-3"
+              style="border rouneded border-white text-white text-[13px] lg:text-base text-sm md:px-3 lg:px-9 px-3 py-3"
             />
             <Button
-              style="bg-white text-[#004DB3] md:text-base text-sm md:px-6 px-4 py-3 rounded ml-3"
+              style="bg-white text-[#004DB3] lg:text-base md:text-sm lg:px-6  px-4 py-3 rounded ml-3"
               text="Enroll Now"
             />
           </div>
-          <div className="absolute md:block hidden left-[46%]  mt-20">
-            <Image src={vector} alt='vector' className='' />
+          <div className="absolute md:block hidden left-[46%] mt-10 lg:mt-20">
+            <Image src={vector} alt='vector' className='w-fit h-fit ' />
           </div>
           <div className="absolute md:hidden  left-[70%] mt-60 ">
             <Image src={vectorResponsive} alt='vectorResponsive' className='' />
           </div>
         </div>
 
-        <div className="mt-4 flex md:justify-start justify-center items-center">
+        <div className="lg:mt-4 mt-6 flex md:justify-start justify-center items-center">
           <Image src={review} alt='review' />
           <div className="text-center ml-3">
-            <p className="font-bold text-white text-xl">255k+</p>
+            <p className="font-bold text-white text-lg lg:text-xl">255k+</p>
             <p className="text-white text-center">Previews</p>
           </div>
         </div>

@@ -30,7 +30,7 @@ const TheBest = () => {
     },
   ];
   return (
-    <div className="md:grid grid-cols-2 justify-between px-5 md:px-20 pt-20">
+    <div className="xl:grid grid-cols-2 justify-between px-5 md:px-20 pt-20">
       <div className="md:flex items-center">
         <div className="">
           <p className="font-bold text-4xl">
@@ -45,7 +45,7 @@ const TheBest = () => {
           <Image src={boy} alt='boy' className="rounded w-[500px]  object-contain" />
         </div>
       </div>
-      <div className="flex items-center md:mt-0 mt-10">
+      <div className="flex items-center lg:mt-0 mt-10">
         <div className="grid grid-cols-2 h-fit md:gap-4 gap-1 ">
           {data.map((items, key) => (
             <div key={key} className="bg-white px-4 py-6 rounded">

@@ -100,10 +100,10 @@ const PopularCourses = () => {
       </p>
       <p className="text-center md:text-base text-sm  mt-9">
         high-defination video is video of higher resolution and quality than
-        standard definition. while <br className="md:block hidden"/> there’s no standard meaning for high
+        standard definition. while <br className="lg:block hidden"/> there’s no standard meaning for high
         definition, generally any standard video image
       </p>
-      <div className="flex items-center md:text-base text-sm mt-8 justify-evenly md:mx-60">
+      <div className="flex items-center md:text-base text-sm mt-8 justify-evenly md:mx-30 lg:mx-60">
         <div className=" bg-white rounded px-4 py-3">
           <p className="text-[#004DB3]">All Categories</p>
         </div>
@@ -117,7 +117,7 @@ const PopularCourses = () => {
           <p>Marketing</p>
         </div>
       </div>
-      <div className="grid gap-1 md:gap-5 grid-cols-2 md:grid-cols-3 mt-10">
+      <div className="grid gap-1 lg:gap-5 grid-cols-2 lg:grid-cols-3 mt-10">
         {data.map((items, key) => (
           <div key={key} className="bg-white md:py-4 md:px-3 px-1 py-1 rounded-xl">
             <Image src={items.img} alt='Popular' />
